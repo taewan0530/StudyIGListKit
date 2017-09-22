@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A123E1CC1F752CF300755D5E /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A123E1CB1F752CF300755D5E /* NibLoadable.swift */; };
+		A123E1D11F752E3900755D5E /* LoanRequiredDocumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A123E1CF1F752E3900755D5E /* LoanRequiredDocumentCell.swift */; };
+		A123E1D21F752E3900755D5E /* LoanRequiredDocumentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A123E1D01F752E3900755D5E /* LoanRequiredDocumentCell.xib */; };
+		A154D9A61F7531F900C33B22 /* LoneInfomationHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154D9A41F7531F900C33B22 /* LoneInfomationHeaderCell.swift */; };
+		A154D9A71F7531F900C33B22 /* LoneInfomationHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A154D9A51F7531F900C33B22 /* LoneInfomationHeaderCell.xib */; };
+		A154D9AA1F7533AA00C33B22 /* TitleHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154D9A81F7533AA00C33B22 /* TitleHeaderCell.swift */; };
+		A154D9AB1F7533AA00C33B22 /* TitleHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A154D9A91F7533AA00C33B22 /* TitleHeaderCell.xib */; };
 		A1AABBAA1F75195D007718EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AABBA91F75195D007718EC /* AppDelegate.swift */; };
 		A1AABBAC1F75195D007718EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AABBAB1F75195D007718EC /* ViewController.swift */; };
 		A1AABBAF1F75195D007718EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1AABBAD1F75195D007718EC /* Main.storyboard */; };
@@ -38,6 +45,13 @@
 		0118ED9F61EDD1E064FBFC4D /* Pods-ExampleProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleProject/Pods-ExampleProject.release.xcconfig"; sourceTree = "<group>"; };
 		19AC95F50842DF0F6B11E0F2 /* Pods_ExampleProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B1EA88E96FF60F41594D93A /* Pods_ExampleProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A123E1CB1F752CF300755D5E /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		A123E1CF1F752E3900755D5E /* LoanRequiredDocumentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanRequiredDocumentCell.swift; sourceTree = "<group>"; };
+		A123E1D01F752E3900755D5E /* LoanRequiredDocumentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoanRequiredDocumentCell.xib; sourceTree = "<group>"; };
+		A154D9A41F7531F900C33B22 /* LoneInfomationHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoneInfomationHeaderCell.swift; sourceTree = "<group>"; };
+		A154D9A51F7531F900C33B22 /* LoneInfomationHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoneInfomationHeaderCell.xib; sourceTree = "<group>"; };
+		A154D9A81F7533AA00C33B22 /* TitleHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleHeaderCell.swift; sourceTree = "<group>"; };
+		A154D9A91F7533AA00C33B22 /* TitleHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleHeaderCell.xib; sourceTree = "<group>"; };
 		A1AABBA61F75195D007718EC /* ExampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AABBA91F75195D007718EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1AABBAB1F75195D007718EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +114,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A123E1CD1F752D2A00755D5E /* Nib */ = {
+			isa = PBXGroup;
+			children = (
+				A123E1CF1F752E3900755D5E /* LoanRequiredDocumentCell.swift */,
+				A123E1D01F752E3900755D5E /* LoanRequiredDocumentCell.xib */,
+				A154D9A41F7531F900C33B22 /* LoneInfomationHeaderCell.swift */,
+				A154D9A51F7531F900C33B22 /* LoneInfomationHeaderCell.xib */,
+				A154D9A81F7533AA00C33B22 /* TitleHeaderCell.swift */,
+				A154D9A91F7533AA00C33B22 /* TitleHeaderCell.xib */,
+			);
+			path = Nib;
+			sourceTree = "<group>";
+		};
+		A123E1CE1F752D2A00755D5E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		A1AABB9D1F75195D007718EC = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +159,9 @@
 		A1AABBA81F75195D007718EC /* ExampleProject */ = {
 			isa = PBXGroup;
 			children = (
+				A123E1CD1F752D2A00755D5E /* Nib */,
+				A123E1CE1F752D2A00755D5E /* Util */,
+				A123E1CB1F752CF300755D5E /* NibLoadable.swift */,
 				A1AABBA91F75195D007718EC /* AppDelegate.swift */,
 				A1AABBAB1F75195D007718EC /* ViewController.swift */,
 				A1AABBAD1F75195D007718EC /* Main.storyboard */,
@@ -265,7 +302,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1AABBB41F75195D007718EC /* LaunchScreen.storyboard in Resources */,
+				A123E1D21F752E3900755D5E /* LoanRequiredDocumentCell.xib in Resources */,
+				A154D9AB1F7533AA00C33B22 /* TitleHeaderCell.xib in Resources */,
 				A1AABBB11F75195D007718EC /* Assets.xcassets in Resources */,
+				A154D9A71F7531F900C33B22 /* LoneInfomationHeaderCell.xib in Resources */,
 				A1AABBAF1F75195D007718EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,7 +385,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A154D9AA1F7533AA00C33B22 /* TitleHeaderCell.swift in Sources */,
+				A123E1CC1F752CF300755D5E /* NibLoadable.swift in Sources */,
+				A123E1D11F752E3900755D5E /* LoanRequiredDocumentCell.swift in Sources */,
 				A1AABBAC1F75195D007718EC /* ViewController.swift in Sources */,
+				A154D9A61F7531F900C33B22 /* LoneInfomationHeaderCell.swift in Sources */,
 				A1AABBAA1F75195D007718EC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

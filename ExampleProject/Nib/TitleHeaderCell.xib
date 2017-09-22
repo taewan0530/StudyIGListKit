@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TitleHeaderCell" customModule="ExampleProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="327" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4c6-EK-5YL">
+                        <rect key="frame" x="0.0" y="0.0" width="30" height="50"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQm-da-4JV">
+                        <rect key="frame" x="305.5" y="0.0" width="21.5" height="50"/>
+                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="4c6-EK-5YL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7Q6-RA-Fuf"/>
+                <constraint firstItem="4c6-EK-5YL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KyK-qT-NUn"/>
+                <constraint firstAttribute="bottom" secondItem="4c6-EK-5YL" secondAttribute="bottom" id="PrY-Pa-DI1"/>
+                <constraint firstAttribute="trailing" secondItem="IQm-da-4JV" secondAttribute="trailing" id="f93-VY-Eg6"/>
+                <constraint firstItem="IQm-da-4JV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="n0g-lU-spO"/>
+                <constraint firstAttribute="bottom" secondItem="IQm-da-4JV" secondAttribute="bottom" id="sWI-ci-pFm"/>
+            </constraints>
+            <size key="customSize" width="327" height="50"/>
+            <point key="canvasLocation" x="172.5" y="37"/>
+        </collectionViewCell>
+    </objects>
+</document>

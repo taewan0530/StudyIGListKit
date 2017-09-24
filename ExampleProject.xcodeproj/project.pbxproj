@@ -22,6 +22,7 @@
 		A1AABBBF1F75195D007718EC /* ExampleProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AABBBE1F75195D007718EC /* ExampleProjectTests.swift */; };
 		A1AABBCA1F75195D007718EC /* ExampleProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AABBC91F75195D007718EC /* ExampleProjectUITests.swift */; };
 		A1C672561F77919700830CE7 /* LoanSubmitDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C672551F77919700830CE7 /* LoanSubmitDocumentViewController.swift */; };
+		A1C672591F779D4900830CE7 /* DocumnetSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C672581F779D4900830CE7 /* DocumnetSectionController.swift */; };
 		A4414692AF515F5E4CCA8FF3 /* Pods_ExampleProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1EA88E96FF60F41594D93A /* Pods_ExampleProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		A1AABBC91F75195D007718EC /* ExampleProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleProjectUITests.swift; sourceTree = "<group>"; };
 		A1AABBCB1F75195D007718EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C672551F77919700830CE7 /* LoanSubmitDocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanSubmitDocumentViewController.swift; sourceTree = "<group>"; };
+		A1C672581F779D4900830CE7 /* DocumnetSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumnetSectionController.swift; sourceTree = "<group>"; };
 		C9C8B6A73329B274A36DBD9D /* Pods-ExampleProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleProject/Pods-ExampleProject.debug.xcconfig"; sourceTree = "<group>"; };
 		EA33816271FF22EB76A7ACAD /* Pods_ExampleProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -129,13 +131,6 @@
 			path = Nib;
 			sourceTree = "<group>";
 		};
-		A123E1CE1F752D2A00755D5E /* Util */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
 		A1AABB9D1F75195D007718EC = {
 			isa = PBXGroup;
 			children = (
@@ -161,9 +156,9 @@
 		A1AABBA81F75195D007718EC /* ExampleProject */ = {
 			isa = PBXGroup;
 			children = (
+				A1C672571F779D3300830CE7 /* SectionController */,
 				A1C672541F77916A00830CE7 /* ViewController */,
 				A123E1CD1F752D2A00755D5E /* Nib */,
-				A123E1CE1F752D2A00755D5E /* Util */,
 				A123E1CB1F752CF300755D5E /* NibLoadable.swift */,
 				A1AABBA91F75195D007718EC /* AppDelegate.swift */,
 				A1AABBAB1F75195D007718EC /* ViewController.swift */,
@@ -199,6 +194,14 @@
 				A1C672551F77919700830CE7 /* LoanSubmitDocumentViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A1C672571F779D3300830CE7 /* SectionController */ = {
+			isa = PBXGroup;
+			children = (
+				A1C672581F779D4900830CE7 /* DocumnetSectionController.swift */,
+			);
+			path = SectionController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,6 +401,7 @@
 			files = (
 				A154D9AA1F7533AA00C33B22 /* TitleHeaderCell.swift in Sources */,
 				A123E1CC1F752CF300755D5E /* NibLoadable.swift in Sources */,
+				A1C672591F779D4900830CE7 /* DocumnetSectionController.swift in Sources */,
 				A123E1D11F752E3900755D5E /* LoanRequiredDocumentCell.swift in Sources */,
 				A1AABBAC1F75195D007718EC /* ViewController.swift in Sources */,
 				A154D9A61F7531F900C33B22 /* LoneInfomationHeaderCell.swift in Sources */,

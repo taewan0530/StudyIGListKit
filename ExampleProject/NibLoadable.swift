@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IGListKit
 
 public protocol NibLoadable: NSObjectProtocol {
     var nibContainerView: UIView { get }
@@ -16,6 +17,8 @@ public protocol NibLoadable: NSObjectProtocol {
 
 
 extension NibLoadable where Self: UIView {
+    
+    
     public func loadNib() -> UIView {
         let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: self.nibName(), bundle: bundle)
@@ -44,7 +47,8 @@ extension NibLoadable where Self: UIView {
 
 
 public protocol NibInstanceable: NSObjectProtocol {
-   static var nibName: String { get }
+    static var nibName: String { get }
+    static var nibBundle: Bundle { get }
 }
 
 public extension NibInstanceable where Self: UIView {
@@ -54,4 +58,21 @@ public extension NibInstanceable where Self: UIView {
         return nib.instantiate(withOwner: self, options: nil)
             .flatMap { $0 as? Self }.first!
     }
+    
+    public static var nibName: String {
+        return Self.description().components(separatedBy: ".").last!
+    }
+    
+    public  static var nibBundle: Bundle {
+        return Bundle(for: Self.self)
+    }
 }
+
+
+
+extension ListCollectionContext {
+    func dequeueReusableCell(withNib instanceable: NibInstanceable.Type, for sectionController: ListSectionController, at index: Int) -> UICollectionViewCell {
+        return dequeueReusableCell(withNibName: instanceable.nibName, bundle: instanceable.nibBundle, for: sectionController, at: index)
+    }
+}
+

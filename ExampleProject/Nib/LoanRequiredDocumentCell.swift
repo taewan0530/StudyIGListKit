@@ -8,22 +8,26 @@
 
 import UIKit
 
-struct RequiredDocumentModel {
-    enum Status {
-        case attachable
-        case editable
-        case completed
-    }
-    
-    var title: String
-    var infomation: String?
-    var status: Status
-    var callback: (() -> Void)?
-    
-}
 
 
-final class LoanRequiredDocumentCell: UICollectionViewCell {
+/*
+ struct RequiredDocumentModel {
+ enum Status {
+ case attachable
+ case editable
+ case completed
+ }
+ 
+ var title: String
+ var infomation: String?
+ var status: Status
+ var callback: (() -> Void)?
+ 
+ }
+
+ */
+
+final class LoanRequiredDocumentCell: UICollectionViewCell, NibInstanceable {
 
     override func awakeFromNib() {
         super.awakeFromNib()

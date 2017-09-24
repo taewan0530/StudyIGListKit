@@ -22,7 +22,7 @@ final class LoanSubmitDocumentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setup()
         // Do any additional setup after loading the view.
     }
 
@@ -45,7 +45,11 @@ extension LoanSubmitDocumentViewController: ListAdapterDataSource {
     
     // 오브젝트에 맞는 섹션 컨트롤러를 꺼내준다.
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
-        return ListSectionController()
+        //각 세션에 맞는 섹션 컨트롤러가 생성이 될꺼다.
+        let sectionController = DocumnetSectionController()
+        sectionController.inset = UIEdgeInsetsMake(0, 16, 12, 16)
+        
+        return sectionController
     }
     
     // 과연 너는 무엇을 하는 놈이냐?

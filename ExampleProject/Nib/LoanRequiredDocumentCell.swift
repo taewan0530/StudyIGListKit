@@ -8,6 +8,22 @@
 
 import UIKit
 
+mutating struct RequiredDocumentModel {
+    
+    var title: String
+    var infomation: String?
+    var status: Status
+    
+    var callback: (() -> Void)?
+    
+    enum Status {
+        case attachable
+        case editable
+        case completed
+    }
+}
+
+
 final class LoanRequiredDocumentCell: UICollectionViewCell {
 
     override func awakeFromNib() {

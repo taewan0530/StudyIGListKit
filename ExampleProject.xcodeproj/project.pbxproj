@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A123E1CC1F752CF300755D5E /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A123E1CB1F752CF300755D5E /* NibLoadable.swift */; };
+		A1063FC71F789C7700BD28C1 /* NibInstanceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1063FC61F789BAF00BD28C1 /* NibInstanceable.swift */; };
+		A1063FC91F789D0C00BD28C1 /* NibInstanceable+IGListKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1063FC81F789D0C00BD28C1 /* NibInstanceable+IGListKit.swift */; };
 		A123E1D11F752E3900755D5E /* LoanRequiredDocumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A123E1CF1F752E3900755D5E /* LoanRequiredDocumentCell.swift */; };
 		A123E1D21F752E3900755D5E /* LoanRequiredDocumentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A123E1D01F752E3900755D5E /* LoanRequiredDocumentCell.xib */; };
 		A154D9A61F7531F900C33B22 /* LoneInfomationHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154D9A41F7531F900C33B22 /* LoneInfomationHeaderCell.swift */; };
@@ -47,7 +48,8 @@
 		0118ED9F61EDD1E064FBFC4D /* Pods-ExampleProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleProject/Pods-ExampleProject.release.xcconfig"; sourceTree = "<group>"; };
 		19AC95F50842DF0F6B11E0F2 /* Pods_ExampleProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B1EA88E96FF60F41594D93A /* Pods_ExampleProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A123E1CB1F752CF300755D5E /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		A1063FC61F789BAF00BD28C1 /* NibInstanceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibInstanceable.swift; sourceTree = "<group>"; };
+		A1063FC81F789D0C00BD28C1 /* NibInstanceable+IGListKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NibInstanceable+IGListKit.swift"; sourceTree = "<group>"; };
 		A123E1CF1F752E3900755D5E /* LoanRequiredDocumentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanRequiredDocumentCell.swift; sourceTree = "<group>"; };
 		A123E1D01F752E3900755D5E /* LoanRequiredDocumentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoanRequiredDocumentCell.xib; sourceTree = "<group>"; };
 		A154D9A41F7531F900C33B22 /* LoneInfomationHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoneInfomationHeaderCell.swift; sourceTree = "<group>"; };
@@ -118,6 +120,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A1063FC51F789BAE00BD28C1 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A1063FC61F789BAF00BD28C1 /* NibInstanceable.swift */,
+				A1063FC81F789D0C00BD28C1 /* NibInstanceable+IGListKit.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		A123E1CD1F752D2A00755D5E /* Nib */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,10 +167,10 @@
 		A1AABBA81F75195D007718EC /* ExampleProject */ = {
 			isa = PBXGroup;
 			children = (
+				A1063FC51F789BAE00BD28C1 /* Util */,
 				A1C672571F779D3300830CE7 /* SectionController */,
 				A1C672541F77916A00830CE7 /* ViewController */,
 				A123E1CD1F752D2A00755D5E /* Nib */,
-				A123E1CB1F752CF300755D5E /* NibLoadable.swift */,
 				A1AABBA91F75195D007718EC /* AppDelegate.swift */,
 				A1AABBAB1F75195D007718EC /* ViewController.swift */,
 				A1AABBAD1F75195D007718EC /* Main.storyboard */,
@@ -400,11 +411,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A154D9AA1F7533AA00C33B22 /* TitleHeaderCell.swift in Sources */,
-				A123E1CC1F752CF300755D5E /* NibLoadable.swift in Sources */,
 				A1C672591F779D4900830CE7 /* DocumnetSectionController.swift in Sources */,
+				A1063FC71F789C7700BD28C1 /* NibInstanceable.swift in Sources */,
 				A123E1D11F752E3900755D5E /* LoanRequiredDocumentCell.swift in Sources */,
 				A1AABBAC1F75195D007718EC /* ViewController.swift in Sources */,
 				A154D9A61F7531F900C33B22 /* LoneInfomationHeaderCell.swift in Sources */,
+				A1063FC91F789D0C00BD28C1 /* NibInstanceable+IGListKit.swift in Sources */,
 				A1C672561F77919700830CE7 /* LoanSubmitDocumentViewController.swift in Sources */,
 				A1AABBAA1F75195D007718EC /* AppDelegate.swift in Sources */,
 			);

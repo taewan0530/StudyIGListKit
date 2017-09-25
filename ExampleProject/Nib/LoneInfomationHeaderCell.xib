@@ -17,14 +17,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LoneInfomationHeaderCell" customModule="ExampleProject" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="336" height="138"/>
+            <rect key="frame" x="0.0" y="0.0" width="432" height="297"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="336" height="138"/>
+                <rect key="frame" x="0.0" y="0.0" width="432" height="297"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="J9A-hD-ow6">
-                        <rect key="frame" x="190" y="47" width="120" height="45.5"/>
+                        <rect key="frame" x="114" y="47" width="120" height="45.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Main-Infomation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ry4-a9-94r">
                                 <rect key="frame" x="0.0" y="0.0" width="120" height="20.5"/>
@@ -47,8 +47,8 @@
                 <constraint firstItem="J9A-hD-ow6" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="nUl-uF-INN"/>
                 <constraint firstItem="J9A-hD-ow6" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="w7s-60-dLy"/>
             </constraints>
-            <size key="customSize" width="336" height="138"/>
-            <point key="canvasLocation" x="177" y="88"/>
+            <size key="customSize" width="432" height="297"/>
+            <point key="canvasLocation" x="-58" y="86"/>
         </collectionViewCell>
     </objects>
 </document>

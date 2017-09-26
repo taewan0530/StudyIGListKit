@@ -15,7 +15,15 @@ final class InfomationHeaderCell: UICollectionViewCell, NibInstanceable {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
+    func set(title: NSAttributedString?) {
+        self.titleLabel.attributedText = title
+        self.titleLabel.isHidden = title == nil
+    }
+
+    func set(description: NSAttributedString?) {
+        self.descriptionLabel.attributedText = description
+        self.descriptionLabel.isHidden = description == nil
+    }
 }

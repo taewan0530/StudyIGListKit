@@ -46,6 +46,10 @@ extension LoanSubmitDocumentViewController: ListAdapterDataSource {
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
         //각 세션에 맞는 섹션 컨트롤러가 생성이 될꺼다.
         if (object as! Int) == 0 {
+            let model = InfomationHeaderSectionModel()
+            let title = "2017.11.12까지\n서류를 모두 제출해주세요."
+            
+            //(title: "2017.11.12까지\n서류를 모두 제출해주세요.", description: <#T##String#>)
             return InfomationHeaderSectionController()
         } else if (object as! Int) == 1 || (object as! Int) == 2 {
             return DocumnetSectionController()

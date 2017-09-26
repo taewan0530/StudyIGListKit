@@ -18,7 +18,12 @@ final class LoanSubmitDocumentViewController: UIViewController {
         return ListAdapter(updater: ListAdapterUpdater(), viewController: self)
     }()
     
-    lazy var items = Array(0...3)
+    lazy var items: [Any] =  {
+        let model = InfomationHeaderSectionModel()
+        model.set(title: "2017.11.12까지\n서류를 모두 제출해주세요.")
+
+        return [model, 1, 2, 3]
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,18 +43,14 @@ extension LoanSubmitDocumentViewController: ListAdapterDataSource {
     
     // model 객체
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-        //ListDiffable 는 nsObject의 extenion 에 확장 한듯 하다.
-        return items as [ListDiffable]
+        return items.flatMap { $0 as? ListDiffable }
     }
     
     // 오브젝트에 맞는 섹션 컨트롤러를 꺼내준다.
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
         //각 세션에 맞는 섹션 컨트롤러가 생성이 될꺼다.
-        if (object as! Int) == 0 {
-            let model = InfomationHeaderSectionModel()
-            let title = "2017.11.12까지\n서류를 모두 제출해주세요."
-            
-            //(title: "2017.11.12까지\n서류를 모두 제출해주세요.", description: <#T##String#>)
+
+        if object is InfomationHeaderSectionModel {
             return InfomationHeaderSectionController()
         } else if (object as! Int) == 1 || (object as! Int) == 2 {
             return DocumnetSectionController()

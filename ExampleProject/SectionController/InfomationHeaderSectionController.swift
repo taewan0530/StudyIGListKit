@@ -9,11 +9,13 @@
 import Foundation
 import IGListKit
 //클래스로 할꺼면 뷰모델로 하고 싶은데.
-class InfomationHeaderSectionModel: ListDiffable {
+class InfomationHeaderSectionModel: NSObject, ListDiffable {
     private(set) var attributedTitle: NSAttributedString?
     private(set) var attributedDescription: NSAttributedString?
 
-    init() { }
+    override init() {
+        super.init()
+    }
 
      func set(title: String) {
         self.attributedTitle = NSAttributedString(string: title)
@@ -21,21 +23,23 @@ class InfomationHeaderSectionModel: ListDiffable {
      func set(description: String) {
         self.attributedDescription = NSAttributedString(string: description)
     }
-     func set(title: NSAttributedString) {
+     func setA(title: NSAttributedString) {
         self.attributedTitle = title
     }
-     func set(description: NSAttributedString) {
+     func setA(description: NSAttributedString) {
         self.attributedDescription = description
     }
 
     func diffIdentifier() -> NSObjectProtocol {
-        return (attributedTitle?.string ?? "") as NSObjectProtocol
+        return self as NSObjectProtocol
+        // (attributedTitle?.string ?? "") as NSObjectProtocol
     }
     
     func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
         //변경 사항들이 있는지 체크하기 위함인듯하다.
         guard self !== object else { return true }
         guard let object = object as? InfomationHeaderSectionModel else { return false }
+        if self.attributedTitle == nil { return false }
         return self.attributedTitle?.string == object.attributedTitle?.string
     }
 }

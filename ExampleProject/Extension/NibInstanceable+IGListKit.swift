@@ -11,13 +11,13 @@ import IGListKit
 
 
 extension ListCollectionContext {
-    func dequeueReusableCell(withNib instanceable: NibInstanceable.Type, for sectionController: ListSectionController, at index: Int) -> UICollectionViewCell {
-        return dequeueReusableCell(withNibName: instanceable.nibName, bundle: instanceable.bundle, for: sectionController, at: index)
+    func dequeueReusableCell<T: NibInstanceable>(withNib instanceable: T.Type, for sectionController: ListSectionController, at index: Int) -> T {
+        return dequeueReusableCell(withNibName: instanceable.nibName, bundle: instanceable.bundle, for: sectionController, at: index) as! T
     }
 }
 
 extension ListCollectionContext {
-    func dequeueReusableSupplementaryView(ofKind elementKind: String, for sectionController: ListSectionController, nibInstanceable: NibInstanceable.Type, at index: Int) -> UICollectionReusableView {
-        return dequeueReusableSupplementaryView(ofKind: elementKind, for: sectionController, nibName: nibInstanceable.nibName, bundle: nibInstanceable.bundle, at: index)
+    func dequeueReusableSupplementaryView<T: NibInstanceable>(ofKind elementKind: String, for sectionController: ListSectionController, nibInstanceable: T.Type, at index: Int) -> T {
+        return dequeueReusableSupplementaryView(ofKind: elementKind, for: sectionController, nibName: nibInstanceable.nibName, bundle: nibInstanceable.bundle, at: index) as! T
     }
 }

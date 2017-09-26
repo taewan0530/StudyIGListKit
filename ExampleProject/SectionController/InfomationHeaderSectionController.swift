@@ -34,8 +34,13 @@ final class InfomationHeaderSectionController: ListSectionController {
         return cell
     }
 
-    fileprivate func didScroll() {
+    // 모델 데이터가 여기로 들어온다!
+    override func didUpdate(to object: Any) {
+        print(object)
 
+        //넌 뭐하는 놈이니??
+        //        self.object = String(describing: object)
     }
+
 }
 

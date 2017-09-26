@@ -27,7 +27,6 @@
 		A1AABBCA1F75195D007718EC /* ExampleProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AABBC91F75195D007718EC /* ExampleProjectUITests.swift */; };
 		A1B8437E1F791EFA005EC43A /* UIView+GetConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B8437D1F791EFA005EC43A /* UIView+GetConstraint.swift */; };
 		A1B843801F7926D9005EC43A /* ParkBenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B8437F1F7926D9005EC43A /* ParkBenchTimer.swift */; };
-		A1B843821F792DE6005EC43A /* LayoutEstimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B843811F792DE6005EC43A /* LayoutEstimatable.swift */; };
 		A1C672561F77919700830CE7 /* LoanSubmitDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C672551F77919700830CE7 /* LoanSubmitDocumentViewController.swift */; };
 		A1C672591F779D4900830CE7 /* DocumnetSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C672581F779D4900830CE7 /* DocumnetSectionController.swift */; };
 		A1D09A2F1F78A46500996FA5 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D09A2E1F78A46500996FA5 /* UIColor+Extension.swift */; };
@@ -83,7 +82,6 @@
 		A1AABBCB1F75195D007718EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1B8437D1F791EFA005EC43A /* UIView+GetConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+GetConstraint.swift"; sourceTree = "<group>"; };
 		A1B8437F1F7926D9005EC43A /* ParkBenchTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkBenchTimer.swift; sourceTree = "<group>"; };
-		A1B843811F792DE6005EC43A /* LayoutEstimatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutEstimatable.swift; sourceTree = "<group>"; };
 		A1C672551F77919700830CE7 /* LoanSubmitDocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanSubmitDocumentViewController.swift; sourceTree = "<group>"; };
 		A1C672581F779D4900830CE7 /* DocumnetSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumnetSectionController.swift; sourceTree = "<group>"; };
 		A1D09A2E1F78A46500996FA5 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 			children = (
 				A1063FC61F789BAF00BD28C1 /* NibInstanceable.swift */,
 				A1B8437F1F7926D9005EC43A /* ParkBenchTimer.swift */,
-				A1B843811F792DE6005EC43A /* LayoutEstimatable.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -453,7 +450,6 @@
 				A1B843801F7926D9005EC43A /* ParkBenchTimer.swift in Sources */,
 				A1C672591F779D4900830CE7 /* DocumnetSectionController.swift in Sources */,
 				A184E81D1F79F32700908A50 /* InfomationHeaderSectionController.swift in Sources */,
-				A1B843821F792DE6005EC43A /* LayoutEstimatable.swift in Sources */,
 				A1B8437E1F791EFA005EC43A /* UIView+GetConstraint.swift in Sources */,
 				A1063FC71F789C7700BD28C1 /* NibInstanceable.swift in Sources */,
 				A184E81F1F79F49800908A50 /* DocumentFooterSectionController.swift in Sources */,

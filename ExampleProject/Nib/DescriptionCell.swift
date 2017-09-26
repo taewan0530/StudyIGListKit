@@ -10,7 +10,7 @@ import UIKit
 
 final class DescriptionCell: UICollectionViewCell, NibInstanceable {
 
-    @IBOutlet private weak var label: UILabel!
+    @IBOutlet private(set) weak var label: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

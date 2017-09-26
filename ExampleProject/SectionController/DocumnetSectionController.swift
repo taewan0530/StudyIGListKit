@@ -48,7 +48,8 @@ final class DocumnetSectionController: ListSectionController {
         }
         return cell
     }
-    
+
+    // 모델 데이터가 여기로 들어온다!
     override func didUpdate(to object: Any) {
         print(object)
 

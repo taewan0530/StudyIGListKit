@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		A1063FC71F789C7700BD28C1 /* NibInstanceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1063FC61F789BAF00BD28C1 /* NibInstanceable.swift */; };
-		A1063FC91F789D0C00BD28C1 /* NibInstanceable+IGListKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1063FC81F789D0C00BD28C1 /* NibInstanceable+IGListKit.swift */; };
 		A123E1D11F752E3900755D5E /* LoanRequiredDocumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A123E1CF1F752E3900755D5E /* LoanRequiredDocumentCell.swift */; };
 		A123E1D21F752E3900755D5E /* LoanRequiredDocumentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A123E1D01F752E3900755D5E /* LoanRequiredDocumentCell.xib */; };
-		A154D9A61F7531F900C33B22 /* LoneInfomationHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154D9A41F7531F900C33B22 /* LoneInfomationHeaderCell.swift */; };
-		A154D9A71F7531F900C33B22 /* LoneInfomationHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A154D9A51F7531F900C33B22 /* LoneInfomationHeaderCell.xib */; };
-		A154D9AA1F7533AA00C33B22 /* TitleHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154D9A81F7533AA00C33B22 /* TitleHeaderCell.swift */; };
-		A154D9AB1F7533AA00C33B22 /* TitleHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A154D9A91F7533AA00C33B22 /* TitleHeaderCell.xib */; };
+		A154D9A61F7531F900C33B22 /* InfomationHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154D9A41F7531F900C33B22 /* InfomationHeaderCell.swift */; };
+		A154D9A71F7531F900C33B22 /* InfomationHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A154D9A51F7531F900C33B22 /* InfomationHeaderCell.xib */; };
+		A154D9AA1F7533AA00C33B22 /* LoanSectionTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154D9A81F7533AA00C33B22 /* LoanSectionTitleCell.swift */; };
+		A154D9AB1F7533AA00C33B22 /* LoanSectionTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A154D9A91F7533AA00C33B22 /* LoanSectionTitleCell.xib */; };
+		A184E81D1F79F32700908A50 /* InfomationHeaderSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184E81C1F79F32700908A50 /* InfomationHeaderSectionController.swift */; };
+		A184E81F1F79F49800908A50 /* DocumentFooterSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184E81E1F79F49800908A50 /* DocumentFooterSectionController.swift */; };
+		A184E8221F79F80800908A50 /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A184E8201F79F80800908A50 /* DescriptionCell.swift */; };
+		A184E8231F79F80800908A50 /* DescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A184E8211F79F80800908A50 /* DescriptionCell.xib */; };
 		A1AABBAA1F75195D007718EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AABBA91F75195D007718EC /* AppDelegate.swift */; };
 		A1AABBAC1F75195D007718EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AABBAB1F75195D007718EC /* ViewController.swift */; };
 		A1AABBAF1F75195D007718EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1AABBAD1F75195D007718EC /* Main.storyboard */; };
@@ -22,8 +25,14 @@
 		A1AABBB41F75195D007718EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1AABBB21F75195D007718EC /* LaunchScreen.storyboard */; };
 		A1AABBBF1F75195D007718EC /* ExampleProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AABBBE1F75195D007718EC /* ExampleProjectTests.swift */; };
 		A1AABBCA1F75195D007718EC /* ExampleProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AABBC91F75195D007718EC /* ExampleProjectUITests.swift */; };
+		A1B8437E1F791EFA005EC43A /* UIView+GetConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B8437D1F791EFA005EC43A /* UIView+GetConstraint.swift */; };
+		A1B843801F7926D9005EC43A /* ParkBenchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B8437F1F7926D9005EC43A /* ParkBenchTimer.swift */; };
+		A1B843821F792DE6005EC43A /* LayoutEstimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B843811F792DE6005EC43A /* LayoutEstimatable.swift */; };
 		A1C672561F77919700830CE7 /* LoanSubmitDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C672551F77919700830CE7 /* LoanSubmitDocumentViewController.swift */; };
 		A1C672591F779D4900830CE7 /* DocumnetSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C672581F779D4900830CE7 /* DocumnetSectionController.swift */; };
+		A1D09A2F1F78A46500996FA5 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D09A2E1F78A46500996FA5 /* UIColor+Extension.swift */; };
+		A1D09A311F78A47F00996FA5 /* NibInstanceable+IGListKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D09A301F78A47E00996FA5 /* NibInstanceable+IGListKit.swift */; };
+		A1D09A391F78A67D00996FA5 /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D09A381F78A67D00996FA5 /* CALayer+Extension.swift */; };
 		A4414692AF515F5E4CCA8FF3 /* Pods_ExampleProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1EA88E96FF60F41594D93A /* Pods_ExampleProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,13 +58,16 @@
 		19AC95F50842DF0F6B11E0F2 /* Pods_ExampleProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B1EA88E96FF60F41594D93A /* Pods_ExampleProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1063FC61F789BAF00BD28C1 /* NibInstanceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibInstanceable.swift; sourceTree = "<group>"; };
-		A1063FC81F789D0C00BD28C1 /* NibInstanceable+IGListKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NibInstanceable+IGListKit.swift"; sourceTree = "<group>"; };
 		A123E1CF1F752E3900755D5E /* LoanRequiredDocumentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanRequiredDocumentCell.swift; sourceTree = "<group>"; };
 		A123E1D01F752E3900755D5E /* LoanRequiredDocumentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoanRequiredDocumentCell.xib; sourceTree = "<group>"; };
-		A154D9A41F7531F900C33B22 /* LoneInfomationHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoneInfomationHeaderCell.swift; sourceTree = "<group>"; };
-		A154D9A51F7531F900C33B22 /* LoneInfomationHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoneInfomationHeaderCell.xib; sourceTree = "<group>"; };
-		A154D9A81F7533AA00C33B22 /* TitleHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleHeaderCell.swift; sourceTree = "<group>"; };
-		A154D9A91F7533AA00C33B22 /* TitleHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleHeaderCell.xib; sourceTree = "<group>"; };
+		A154D9A41F7531F900C33B22 /* InfomationHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfomationHeaderCell.swift; sourceTree = "<group>"; };
+		A154D9A51F7531F900C33B22 /* InfomationHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfomationHeaderCell.xib; sourceTree = "<group>"; };
+		A154D9A81F7533AA00C33B22 /* LoanSectionTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanSectionTitleCell.swift; sourceTree = "<group>"; };
+		A154D9A91F7533AA00C33B22 /* LoanSectionTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoanSectionTitleCell.xib; sourceTree = "<group>"; };
+		A184E81C1F79F32700908A50 /* InfomationHeaderSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfomationHeaderSectionController.swift; sourceTree = "<group>"; };
+		A184E81E1F79F49800908A50 /* DocumentFooterSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentFooterSectionController.swift; sourceTree = "<group>"; };
+		A184E8201F79F80800908A50 /* DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
+		A184E8211F79F80800908A50 /* DescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionCell.xib; sourceTree = "<group>"; };
 		A1AABBA61F75195D007718EC /* ExampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AABBA91F75195D007718EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1AABBAB1F75195D007718EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,8 +81,14 @@
 		A1AABBC51F75195D007718EC /* ExampleProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AABBC91F75195D007718EC /* ExampleProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleProjectUITests.swift; sourceTree = "<group>"; };
 		A1AABBCB1F75195D007718EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B8437D1F791EFA005EC43A /* UIView+GetConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+GetConstraint.swift"; sourceTree = "<group>"; };
+		A1B8437F1F7926D9005EC43A /* ParkBenchTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkBenchTimer.swift; sourceTree = "<group>"; };
+		A1B843811F792DE6005EC43A /* LayoutEstimatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutEstimatable.swift; sourceTree = "<group>"; };
 		A1C672551F77919700830CE7 /* LoanSubmitDocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanSubmitDocumentViewController.swift; sourceTree = "<group>"; };
 		A1C672581F779D4900830CE7 /* DocumnetSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumnetSectionController.swift; sourceTree = "<group>"; };
+		A1D09A2E1F78A46500996FA5 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A1D09A301F78A47E00996FA5 /* NibInstanceable+IGListKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NibInstanceable+IGListKit.swift"; sourceTree = "<group>"; };
+		A1D09A381F78A67D00996FA5 /* CALayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
 		C9C8B6A73329B274A36DBD9D /* Pods-ExampleProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleProject/Pods-ExampleProject.debug.xcconfig"; sourceTree = "<group>"; };
 		EA33816271FF22EB76A7ACAD /* Pods_ExampleProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -124,7 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				A1063FC61F789BAF00BD28C1 /* NibInstanceable.swift */,
-				A1063FC81F789D0C00BD28C1 /* NibInstanceable+IGListKit.swift */,
+				A1B8437F1F7926D9005EC43A /* ParkBenchTimer.swift */,
+				A1B843811F792DE6005EC43A /* LayoutEstimatable.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -134,10 +153,12 @@
 			children = (
 				A123E1CF1F752E3900755D5E /* LoanRequiredDocumentCell.swift */,
 				A123E1D01F752E3900755D5E /* LoanRequiredDocumentCell.xib */,
-				A154D9A41F7531F900C33B22 /* LoneInfomationHeaderCell.swift */,
-				A154D9A51F7531F900C33B22 /* LoneInfomationHeaderCell.xib */,
-				A154D9A81F7533AA00C33B22 /* TitleHeaderCell.swift */,
-				A154D9A91F7533AA00C33B22 /* TitleHeaderCell.xib */,
+				A154D9A41F7531F900C33B22 /* InfomationHeaderCell.swift */,
+				A154D9A51F7531F900C33B22 /* InfomationHeaderCell.xib */,
+				A154D9A81F7533AA00C33B22 /* LoanSectionTitleCell.swift */,
+				A154D9A91F7533AA00C33B22 /* LoanSectionTitleCell.xib */,
+				A184E8201F79F80800908A50 /* DescriptionCell.swift */,
+				A184E8211F79F80800908A50 /* DescriptionCell.xib */,
 			);
 			path = Nib;
 			sourceTree = "<group>";
@@ -167,6 +188,7 @@
 		A1AABBA81F75195D007718EC /* ExampleProject */ = {
 			isa = PBXGroup;
 			children = (
+				A1D09A2D1F78A45C00996FA5 /* Extension */,
 				A1063FC51F789BAE00BD28C1 /* Util */,
 				A1C672571F779D3300830CE7 /* SectionController */,
 				A1C672541F77916A00830CE7 /* ViewController */,
@@ -210,9 +232,22 @@
 		A1C672571F779D3300830CE7 /* SectionController */ = {
 			isa = PBXGroup;
 			children = (
+				A184E81C1F79F32700908A50 /* InfomationHeaderSectionController.swift */,
 				A1C672581F779D4900830CE7 /* DocumnetSectionController.swift */,
+				A184E81E1F79F49800908A50 /* DocumentFooterSectionController.swift */,
 			);
 			path = SectionController;
+			sourceTree = "<group>";
+		};
+		A1D09A2D1F78A45C00996FA5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A1B8437D1F791EFA005EC43A /* UIView+GetConstraint.swift */,
+				A1D09A2E1F78A46500996FA5 /* UIColor+Extension.swift */,
+				A1D09A301F78A47E00996FA5 /* NibInstanceable+IGListKit.swift */,
+				A1D09A381F78A67D00996FA5 /* CALayer+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,12 +316,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = wani.kim;
 				TargetAttributes = {
 					A1AABBA51F75195D007718EC = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = C8LLTKJ2XT;
 						ProvisioningStyle = Automatic;
 					};
 					A1AABBB91F75195D007718EC = {
@@ -328,10 +362,11 @@
 			files = (
 				A1AABBB41F75195D007718EC /* LaunchScreen.storyboard in Resources */,
 				A123E1D21F752E3900755D5E /* LoanRequiredDocumentCell.xib in Resources */,
-				A154D9AB1F7533AA00C33B22 /* TitleHeaderCell.xib in Resources */,
+				A154D9AB1F7533AA00C33B22 /* LoanSectionTitleCell.xib in Resources */,
 				A1AABBB11F75195D007718EC /* Assets.xcassets in Resources */,
-				A154D9A71F7531F900C33B22 /* LoneInfomationHeaderCell.xib in Resources */,
+				A154D9A71F7531F900C33B22 /* InfomationHeaderCell.xib in Resources */,
 				A1AABBAF1F75195D007718EC /* Main.storyboard in Resources */,
+				A184E8231F79F80800908A50 /* DescriptionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,10 +413,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ExampleProject/Pods-ExampleProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
+				"${BUILT_PRODUCTS_DIR}/JPFPSStatus/JPFPSStatus.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftRichString/SwiftRichString.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JPFPSStatus.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftRichString.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -410,15 +449,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A154D9AA1F7533AA00C33B22 /* TitleHeaderCell.swift in Sources */,
+				A154D9AA1F7533AA00C33B22 /* LoanSectionTitleCell.swift in Sources */,
+				A1B843801F7926D9005EC43A /* ParkBenchTimer.swift in Sources */,
 				A1C672591F779D4900830CE7 /* DocumnetSectionController.swift in Sources */,
+				A184E81D1F79F32700908A50 /* InfomationHeaderSectionController.swift in Sources */,
+				A1B843821F792DE6005EC43A /* LayoutEstimatable.swift in Sources */,
+				A1B8437E1F791EFA005EC43A /* UIView+GetConstraint.swift in Sources */,
 				A1063FC71F789C7700BD28C1 /* NibInstanceable.swift in Sources */,
+				A184E81F1F79F49800908A50 /* DocumentFooterSectionController.swift in Sources */,
+				A1D09A391F78A67D00996FA5 /* CALayer+Extension.swift in Sources */,
 				A123E1D11F752E3900755D5E /* LoanRequiredDocumentCell.swift in Sources */,
 				A1AABBAC1F75195D007718EC /* ViewController.swift in Sources */,
-				A154D9A61F7531F900C33B22 /* LoneInfomationHeaderCell.swift in Sources */,
-				A1063FC91F789D0C00BD28C1 /* NibInstanceable+IGListKit.swift in Sources */,
+				A184E8221F79F80800908A50 /* DescriptionCell.swift in Sources */,
+				A154D9A61F7531F900C33B22 /* InfomationHeaderCell.swift in Sources */,
 				A1C672561F77919700830CE7 /* LoanSubmitDocumentViewController.swift in Sources */,
 				A1AABBAA1F75195D007718EC /* AppDelegate.swift in Sources */,
+				A1D09A2F1F78A46500996FA5 /* UIColor+Extension.swift in Sources */,
+				A1D09A311F78A47F00996FA5 /* NibInstanceable+IGListKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,7 +530,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -491,7 +540,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -534,7 +587,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -542,7 +597,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -573,7 +632,7 @@
 			baseConfigurationReference = C9C8B6A73329B274A36DBD9D /* Pods-ExampleProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = C8LLTKJ2XT;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ExampleProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kakaobank.ExampleProject;
@@ -587,7 +646,7 @@
 			baseConfigurationReference = 0118ED9F61EDD1E064FBFC4D /* Pods-ExampleProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = C8LLTKJ2XT;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ExampleProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kakaobank.ExampleProject;

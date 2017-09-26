@@ -15,3 +15,9 @@ extension ListCollectionContext {
         return dequeueReusableCell(withNibName: instanceable.nibName, bundle: instanceable.bundle, for: sectionController, at: index)
     }
 }
+
+extension ListCollectionContext {
+    func dequeueReusableSupplementaryView(ofKind elementKind: String, for sectionController: ListSectionController, nibInstanceable: NibInstanceable.Type, at index: Int) -> UICollectionReusableView {
+        return dequeueReusableSupplementaryView(ofKind: elementKind, for: sectionController, nibName: nibInstanceable.nibName, bundle: nibInstanceable.bundle, at: index)
+    }
+}

@@ -6,4 +6,6 @@ target 'ExampleProject' do
   use_frameworks!
 
   pod 'IGListKit', '~> 3.0'
+  pod 'JPFPSStatus', '~> 0.1'
+  pod 'SwiftRichString', '~> 0.9.10'
 end

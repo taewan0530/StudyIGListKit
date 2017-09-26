@@ -18,7 +18,7 @@ final class LoanSubmitDocumentViewController: UIViewController {
         return ListAdapter(updater: ListAdapterUpdater(), viewController: self)
     }()
     
-    lazy var items = Array(0...20)
+    lazy var items = Array(0...3)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,6 @@ final class LoanSubmitDocumentViewController: UIViewController {
     private func setup() {
         adapter.collectionView = collectionView
         adapter.dataSource = self
-        adapter.scrollViewDelegate = self
     }
 }
 
@@ -46,10 +45,13 @@ extension LoanSubmitDocumentViewController: ListAdapterDataSource {
     // 오브젝트에 맞는 섹션 컨트롤러를 꺼내준다.
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
         //각 세션에 맞는 섹션 컨트롤러가 생성이 될꺼다.
-        let sectionController = DocumnetSectionController()
-        sectionController.inset = UIEdgeInsetsMake(0, 16, 12, 16)
-        
-        return sectionController
+        if (object as! Int) == 0 {
+            return InfomationHeaderSectionController()
+        } else if (object as! Int) == 1 || (object as! Int) == 2 {
+            return DocumnetSectionController()
+        } else {
+            return DocumentFooterSectionController()
+        }
     }
     
     // 과연 너는 무엇을 하는 놈이냐?
@@ -58,6 +60,4 @@ extension LoanSubmitDocumentViewController: ListAdapterDataSource {
     }
 }
 
-extension LoanSubmitDocumentViewController: UIScrollViewDelegate {
-    
-}
+

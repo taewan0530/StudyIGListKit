@@ -1,5 +1,5 @@
 //
-//  LoneInfomationHeaderCell.swift
+//  InfomationHeaderCell.swift
 //  ExampleProject
 //
 //  Created by wani.kim on 2017. 9. 22..
@@ -8,7 +8,10 @@
 
 import UIKit
 
-final class LoneInfomationHeaderCell: UICollectionViewCell {
+final class InfomationHeaderCell: UICollectionViewCell, NibInstanceable {
+
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var descriptionLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

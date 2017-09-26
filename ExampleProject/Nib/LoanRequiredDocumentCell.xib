@@ -1,34 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AppleSDGothicNeo.ttc">
+            <string>AppleSDGothicNeo-Bold</string>
+            <string>AppleSDGothicNeo-Regular</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LoanRequiredDocumentCell" customModule="ExampleProject" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="357" height="90"/>
+            <rect key="frame" x="0.0" y="0.0" width="362" height="157"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="357" height="90"/>
+                <rect key="frame" x="0.0" y="0.0" width="362" height="157"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="k6t-w9-pys">
-                        <rect key="frame" x="18" y="19.5" width="55" height="51"/>
+                        <rect key="frame" x="0.0" y="53" width="323" height="51"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1x-o3-Lok">
-                                <rect key="frame" x="0.0" y="0.0" width="55" height="18"/>
+                                <rect key="frame" x="0.0" y="0.0" width="323" height="18"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="infomation infomation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23W-wF-72S">
-                                <rect key="frame" x="0.0" y="22" width="55" height="29"/>
+                                <rect key="frame" x="0.0" y="22" width="323" height="29"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
                                 <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -36,10 +42,12 @@
                         </subviews>
                     </stackView>
                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cx-kv-lfH">
-                        <rect key="frame" x="302" y="29" width="39" height="32"/>
+                        <rect key="frame" x="323" y="62.5" width="39" height="32"/>
                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="13"/>
                         <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
-                        <state key="normal" title="첨부"/>
+                        <state key="normal" title="첨부">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
                     </button>
                 </subviews>
             </view>
@@ -53,8 +61,13 @@
                 <constraint firstItem="k6t-w9-pys" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="18" id="gqX-Wj-piJ"/>
                 <constraint firstItem="k6t-w9-pys" firstAttribute="top" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="yT4-Bs-Ljd"/>
             </constraints>
-            <size key="customSize" width="357" height="90"/>
-            <point key="canvasLocation" x="187.5" y="171"/>
+            <size key="customSize" width="362" height="157"/>
+            <connections>
+                <outlet property="infomationLabel" destination="23W-wF-72S" id="3gd-Sv-Zkd"/>
+                <outlet property="statusButton" destination="9cx-kv-lfH" id="gKp-P7-I14"/>
+                <outlet property="titleLabel" destination="G1x-o3-Lok" id="xyp-uo-9gI"/>
+            </connections>
+            <point key="canvasLocation" x="190" y="204.5"/>
         </collectionViewCell>
     </objects>
 </document>

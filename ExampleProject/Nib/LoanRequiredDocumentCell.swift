@@ -8,30 +8,21 @@
 
 import UIKit
 
-
-
-/*
- struct RequiredDocumentModel {
- enum Status {
- case attachable
- case editable
- case completed
- }
- 
- var title: String
- var infomation: String?
- var status: Status
- var callback: (() -> Void)?
- 
- }
-
- */
-
 final class LoanRequiredDocumentCell: UICollectionViewCell, NibInstanceable {
+
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var infomationLabel: UILabel!
+    @IBOutlet private weak var statusButton: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setup()
     }
 
+    private func setup() {
+        self.layer.border(color: .kbOneColor221, width: 1, radius: 2)
+        self.statusButton.layer.border(color: .kbOneColor179, width: 1, radius: 2)
+    }
 }
+
+
